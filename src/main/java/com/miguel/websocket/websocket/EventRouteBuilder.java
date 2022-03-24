@@ -10,15 +10,9 @@ public class EventRouteBuilder extends RouteBuilder {
 
   static final String MY_STREAM = "my-stream";
 
-  private final MessageMultiplier messageMultiplier;
-
   @Override
   public void configure() {
     from("rabbitmq:topic?skipExchangeDeclare=true&routingKey=test")
-        .convertBodyTo(String.class)
-        .bean(messageMultiplier);
-
-    from("direct:test")
         .convertBodyTo(String.class)
         .to(String.format("reactive-streams:%s", MY_STREAM));
   }
