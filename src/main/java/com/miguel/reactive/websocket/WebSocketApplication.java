@@ -1,4 +1,4 @@
-package com.miguel.websocket.websocket;
+package com.miguel.reactive.websocket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.miguel.websocket.websocket;
+package com.miguel.reactive.websocket;
 
 import java.util.HashMap;
 import java.util.Map;

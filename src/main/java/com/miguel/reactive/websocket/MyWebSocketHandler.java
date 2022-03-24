@@ -1,6 +1,6 @@
-package com.miguel.websocket.websocket;
+package com.miguel.reactive.websocket;
 
-import static com.miguel.websocket.websocket.EventRouteBuilder.MY_STREAM;
+import static com.miguel.reactive.websocket.EventRouteBuilder.MY_STREAM;
 
 import lombok.AllArgsConstructor;
 import org.apache.camel.Exchange;

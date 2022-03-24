@@ -1,4 +1,4 @@
-package com.miguel.websocket.websocket;
+package com.miguel.reactive.websocket;
 
 import lombok.AllArgsConstructor;
 import org.apache.camel.builder.RouteBuilder;
