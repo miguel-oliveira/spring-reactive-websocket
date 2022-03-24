@@ -18,7 +18,7 @@
   <description>Spring Reactive WebSocket Demo</description>
 
   <properties>
-    <java.version>11</java.version>
+    <java.version>17</java.version>
     <camel.version>2.25.4</camel.version>
   </properties>
 
