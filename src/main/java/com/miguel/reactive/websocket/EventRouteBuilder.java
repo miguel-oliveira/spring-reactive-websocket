@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class EventRouteBuilder extends RouteBuilder {
 
-  static final String MY_STREAM = "my-stream";
+  static final String MESSAGE_STREAM = "message-stream";
 
   @Override
   public void configure() {
-    from("rabbitmq:topic?skipExchangeDeclare=true&routingKey=test")
+    from("spring-rabbitmq:amq.direct?autoDeclare=true")
         .convertBodyTo(String.class)
-        .to(String.format("reactive-streams:%s", MY_STREAM));
+        .to(String.format("reactive-streams:%s", MESSAGE_STREAM));
   }
 }
